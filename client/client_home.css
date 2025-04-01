@@ -56,41 +56,14 @@ header ul {
   padding: 10px 0 10px 20px;
 }
 
-.loggin-container {
-  display: flex;
-  align-items: center;
-  font-family: Josefin Sans;
-  text-decoration: none;
-}
-
-.login-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  padding: 0;
-  margin: 0;
-  transform: scale(100%);
-  transition: all 0.5s ease;
-}
-
-.login-inner:hover {
-  transform: scale(120%);
-  transition: all 0.5s ease;
-}
-
-a .login-txt {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
 .main-container {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 0;
-  margin-bottom: 3%;
-  border-bottom-right-radius: 450px;
+  padding: 4% 30% 4% 30%;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
 }
 
 .main-container::after {
@@ -101,95 +74,63 @@ a .login-txt {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #4caf50;
+  background-color: #a9c4aaf7;
   transform-origin: bottom left;
   transform: translateY(50px) rotateZ(-2deg);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   border-radius: 250px 50px 450px 50px;
 }
 
-.explications {
-  display: flex;
-  justify-content: space-between;
-  gap: 200px;
-  padding: 120px 0 120px 0;
-  
+.table-container {
+  max-height: 650px;
+  width: 975px;
+  overflow-y: auto;
 }
 
-.inner-explication {
-  border-radius: 20px;
-  transform: scale(100%);
-  transition: all 0.5s ease;
-}
-
-.inner-explication:hover {
-  border-radius: 20px;
-  transform: scale(130%);
-  transition: all 0.5s ease;
-}
-
-.explication-img {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.h1explications {
+.client-table {
   font-family: Josefin Sans;
-  font-size: 22px;
-  justify-content: center;
+  border-collapse: collapse;
+  width: 950px;
+  table-layout:auto;
+}
+
+td {
+  padding: 15px;
   text-align: center;
+  vertical-align: middle;
 }
 
-.h2explications {
-  font-family: Josefin Sans;
-  font-size: 15px;
-  font-weight: 400;
-  color: #3b3b3b;
-  justify-content: center;
-  text-align: center;
-}
-
-.discover-main {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-  padding: 1% 25% 5% 25%;
-}
-
-.discover-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.discover-btn {
-  color: rgb(29, 29, 29);
-  height: 50px;
-  width: 700px;
-  background-color: rgb(255, 255, 255);
-  border: black 1px solid;
-  border-radius: 50px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  transition: all 500ms ease;
-}
-
-.discover-btn:hover {
-  color: rgb(207, 207, 207);
-  height: 50px;
-  width: 700px;
-  background-color: #2e8b57;
-  border: black 1px solid;
-  border-radius: 50px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+tr:hover {
+  background-color: #8fc094;
   cursor: pointer;
+}
+
+.tr-with-tooltip {
+  position: relative;
+}
+
+.tr-with-tooltip:hover:after {
+  content: attr(data-comment);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  color: rgb(90, 90, 90);
+  padding: 15px;
+  border-radius: 15px;
+  z-index: 100;
+  white-space: nowrap;
+}
+
+td, th {
+  border: 1px solid #565656;
+  padding: 15px 15px 15px 15px;
 }
 
 .site-footer {
   background-color: #008080;
   color: #ffffff;
-  padding-top: 80px;
+  margin-top: 80px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border: rgb(146, 146, 146) 1px solid;
   border-top-right-radius: 500px;
@@ -209,6 +150,7 @@ a .login-txt {
   height: 80px;
   width: auto;
   padding-left: 50px;
+  padding-top: 2%;
 }
 
 .footer-description {
@@ -232,7 +174,7 @@ a .login-txt {
   font-size: 18px;
   margin-bottom: 20px;
   position: relative;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-heading::after {
@@ -255,7 +197,7 @@ a .login-txt {
 
 .footer-link:hover {
   color: #e74c3c;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 .social-links {
@@ -269,4 +211,18 @@ a .login-txt {
   margin-top: 40px;
   font-size: 14px;
   opacity: 0.7;
+}
+
+.search-bar {
+  border: black 1px solid;
+  border-radius: 250px;
+  background-color: rgb(223, 223, 223);
+  width: 500px;
+  height: 30px;
+  margin-bottom: 2%;
+  padding: 7px;
+}
+
+.search-bar:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }

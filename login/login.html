@@ -16,7 +16,9 @@
     <header>
         <ul>
             <li>
-                <img class="main-logo" src="../resources/icons/logo2.png" alt="registre-patientelle-logo">
+                <a href="../index.html">
+                    <img class="main-logo" src="../resources/icons/logo2.png" alt="registre-patientelle-logo">
+                </a>
             </li>
             <li>
                 <div class="nav-txt">
@@ -25,10 +27,6 @@
             </li>
             <li>
                 <a class="loggin-container" href="../index.html">
-                    <div class="login-inner">
-                        <img class="logo" src="../resources/icons/logout.png" alt="log-out">
-                        <div class="login-tx">Log out</div>
-                    </div>
                 </a>
             </li>
         </ul>
@@ -40,6 +38,14 @@
 
             <label for="password">Password</label>
             <input type="password" id="password" name="password">
+            <div class="btn-container">
+                <button class="ok-btn" type="button" onclick="window.location.href='../client/client_home.html'">
+                    Ok
+                </button>
+                <button class="cancel-btn" type="button" onclick="window.location.href='../index.html'">
+                    Cancel
+                </button>
+            </div>
         </form>
     </div>
 </body>

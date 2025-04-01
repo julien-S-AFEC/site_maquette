@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./client_home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <img class="main-logo" src="../resources/icons/logo2.png" alt="registre-patientelle-logo">
+                </a>
+            </li>
+            <li>
+                <div class="nav-txt">
+                    Votre gestionaire de patientelle
+                </div>
+            </li>
+            <li>
+                <a class="loggin-container" href="../index.html">
+                    <div class="login-inner">
+                        <img class="logo" src="../resources/icons/logout.png" alt="log-out">
+                        <div class="login-tx">Log out</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="main-container" id="main-container">
+        <div class="search-bar-container">
+            <input class="search-bar" placeholder="chercher un patient, un medecin ou un établissement">
+
+            </input>
+        </div>
+        <div class="table-container">
+            <table class="client-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Docteur</th>
+                        <th>Etablissement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr-with-tooltip" data-comment="Patient nécessite un suivi particulier"
+                        onclick="window.location.href='./registry/test_client.html';">
+                        <td>1</td>
+                        <td>Marie Dupont</td>
+                        <td>marie.dupont@mail.fr</td>
+                        <td>612-345-7890</td>
+                        <td>Dr. Martin</td>
+                        <td>Ehpad Les Oliviers</td>
+                    </tr>
+                    <tr class="tr-with-tooltip" onclick="window.location.href='./registry/test_client.html';">
+                        <td>2</td>
+                        <td>Jean Leroy</td>
+                        <td>jean.leroy@example.com</td>
+                        <td>655-987-3210</td>
+                        <td>Dr. Bernard</td>
+                        <td>Ehpad Belle Vue</td>
+                    </tr>
+                    <tr class="tr-with-tooltip" onclick="window.location.href='./registry/test_client.html';">
+                        <td>3</td>
+                        <td>Sophie Lambert</td>
+                        <td>sophie.lambert@domaine.com</td>
+                        <td>723-456-1890</td>
+                        <td>Dr. Petit</td>
+                        <td>Ehpad Le Château</td>
+                    </tr>
+                    <tr class="tr-with-tooltip" onclick="window.location.href='./registry/test_client.html';">
+                        <td>4</td>
+                        <td>Pierre Moreau</td>
+                        <td>pierre.moreau@poste.net</td>
+                        <td>689-123-4567</td>
+                        <td>Dr. Lefevre</td>
+                        <td>Ehpad La Roseraie</td>
+                    </tr>
+                    <tr class="tr-with-tooltip" onclick="window.location.href='./registry/test_client.html';">
+                        <td>5</td>
+                        <td>Élise Rousseau</td>
+                        <td>elise.rousseau@inbox.fr</td>
+                        <td>712-345-6789</td>
+                        <td>Dr. Girard</td>
+                        <td>Ehpad Les Pins</td>
+                    </tr>
+                    <tr class="tr-with-tooltip" onclick="window.location.href='./registry/test_client.html';">
+                        <td>6</td>
+                        <td>Thomas Michel</td>
+                        <td>thomas.michel@service.org</td>
+                        <td>645-789-1234</td>
+                        <td>Dr. Laurent</td>
+                        <td>Ehpad Le Clos Fleuri</td>
+                    </tr>
+                    <tr class="tr-with-tooltip" onclick="window.location.href='./registry/test_client.html';">
+                        <td>7</td>
+                        <td>Camille Fournier</td>
+                        <td>camille.fournier@webmail.com</td>
+                        <td>678-912-3456</td>
+                        <td>Dr. Roux</td>
+                        <td>Ehpad Saint-Pierre</td>
+                    </tr>
+                    <tr class="tr-with-tooltip" onclick="window.location.href='./registry/test_client.html';">
+                        <td>8</td>
+                        <td>Nicolas Dubois</td>
+                        <td>nicolas.dubois@protonmail.com</td>
+                        <td>756-891-2345</td>
+                        <td>Dr. Fontaine</td>
+                        <td>Ehpad La Fontaine</td>
+                    </tr>
+                    <tr class="tr-with-tooltip" onclick="window.location.href='./registry/test_client.html';">
+                        <td>9</td>
+                        <td>Isabelle Mercier</td>
+                        <td>isabelle.mercier@yahoo.fr</td>
+                        <td>789-123-4567</td>
+                        <td>Dr. Blanc</td>
+                        <td>Ehpad Les Cyprès</td>
+                    </tr>
+                    <tr class="tr-with-tooltip" onclick="window.location.href='./registry/test_client.html';">
+                        <td>10</td>
+                        <td>François Chevalier</td>
+                        <td>francois.chevalier@mail.com</td>
+                        <td>812-345-6789</td>
+                        <td>Dr. Gauthier</td>
+                        <td>Ehpad Le Parc</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Valérie Lemoine</td>
+                        <td>valerie.lemoine@inbox.com</td>
+                        <td>823-456-7891</td>
+                        <td>Dr. Marchand</td>
+                        <td>Ehpad Les Lilas</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Philippe Barbier</td>
+                        <td>philippe.barbier@post.com</td>
+                        <td>834-567-8912</td>
+                        <td>Dr. Noel</td>
+                        <td>Ehpad La Colline</td>
+                    </tr>
+                    <tr class="tr-with-tooltip" data-comment="Patient sous traitement lourd">
+                        <td>13</td>
+                        <td>Christine Perrot</td>
+                        <td>christine.perrot@example.org</td>
+                        <td>845-678-9123</td>
+                        <td>Dr. Marie</td>
+                        <td>Ehpad Le Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Patrick Gaillard</td>
+                        <td>patrick.gaillard@domaine.fr</td>
+                        <td>856-789-1234</td>
+                        <td>Dr. Julien</td>
+                        <td>Ehpad Les Chênes</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Sandrine Leclerc</td>
+                        <td>sandrine.leclerc@service.fr</td>
+                        <td>867-891-2345</td>
+                        <td>Dr. Vidal</td>
+                        <td>Ehpad La Clairière</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Éric Marchal</td>
+                        <td>eric.marchal@internet.com</td>
+                        <td>878-912-3456</td>
+                        <td>Dr. Andre</td>
+                        <td>Ehpad Le Vallon</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Nathalie Bertrand</td>
+                        <td>nathalie.bertrand@web.fr</td>
+                        <td>889-123-4567</td>
+                        <td>Dr. Lemoine</td>
+                        <td>Ehpad Les Peupliers</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Olivier Roussel</td>
+                        <td>olivier.roussel@poste.org</td>
+                        <td>890-234-5678</td>
+                        <td>Dr. Gerard</td>
+                        <td>Ehpad La Pinède</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Céline Picard</td>
+                        <td>celine.picard@example.net</td>
+                        <td>901-345-6789</td>
+                        <td>Dr. Colin</td>
+                        <td>Ehpad Les Roses</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>David Herve</td>
+                        <td>david.herve@domaine.org</td>
+                        <td>912-456-7890</td>
+                        <td>Dr. Francois</td>
+                        <td>Ehpad Le Manoir</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <img src="../resources/icons/logo_bright.png" alt="Company Logo" class="footer-logo">
+
+            <div class="footer-brand">
+                <p class="footer-description">Your trusted partner for innovative solutions since 2025.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Company</h3>
+                    <ul>
+                        <li><a href="/about" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Support</h3>
+                    <ul>
+                        <li><a href="/contact" class="footer-link">Contact Us</a></li>
+                        <li><a href="/faq" class="footer-link">FAQ</a></li>
+                        <li><a href="/privacy" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Registre Patientelle. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

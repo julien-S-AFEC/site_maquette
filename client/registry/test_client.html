@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./test_client.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href="../../index.html">
+                    <img class="main-logo" src="../../resources/icons/logo2.png" alt="registre-patientelle-logo">
+                </a>
+            </li>
+            <li>
+                <div class="nav-txt">
+                    Votre gestionaire de patientelle
+                </div>
+            </li>
+            <li>
+                <a class="loggin-container" href="../../../index.html">
+                    <div class="login-inner">
+                        <img class="logo" src="../../resources/icons/logout.png" alt="log-out">
+                        <div class="login-tx">Log out</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="main-container">
+        <div class="archived-ordo-container">
+            <img class="archived-ordo" src="../../resources/icons/ordo.jpg" alt="ordonance-img">
+            <img class="archived-ordo" src="../../resources/icons/ordo.jpg" alt="ordonance-img">
+            <img class="archived-ordo" src="../../resources/icons/ordo.jpg" alt="ordonance-img">
+            <img class="archived-ordo" src="../../resources/icons/ordo.jpg" alt="ordonance-img">
+        </div>
+        <div class="ordo-container">
+            <img class="ordo-img" src="../../resources/icons/ordo.jpg" alt="ordonance-img">
+        </div>
+
+        <div class="table-container" id="table-container">
+            <table class="client-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Doctor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr-with-tooltip" data-comment="Ce client n'as plus d'ordonnances valable"
+                        onclick="window.location.href='../test_client.html';">
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>123-456-7890</td>
+                        <td>Dr. Smith</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="notes-container">
+                <div class="notes-header">
+                    Commentaires
+                </div>
+                <textarea rows="5" cols="50"
+                    placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed maxime eum aut magnam quasi accusantium autem eligendi? Numquam nesciunt ducimus dolore aperiam ea, ipsam accusamus voluptatibus hic quia, eveniet modi.">
+              </textarea>
+            </div>
+
+            <a class="back-container" href="../client_home.html">
+                <img src="../../resources/icons/back.png" alt="back-arrow" class="logo">
+                <div>
+                    Retour
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <img src="../../resources/icons/logo_bright.png" alt="Company Logo" class="footer-logo">
+
+            <div class="footer-brand">
+                <p class="footer-description">Your trusted partner for innovative solutions since 2025.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Company</h3>
+                    <ul>
+                        <li><a href="/about" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Support</h3>
+                    <ul>
+                        <li><a href="/contact" class="footer-link">Contact Us</a></li>
+                        <li><a href="/faq" class="footer-link">FAQ</a></li>
+                        <li><a href="/privacy" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Registre Patientelle. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

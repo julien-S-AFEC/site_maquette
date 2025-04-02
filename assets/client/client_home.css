@@ -46,7 +46,7 @@ header ul {
 }
 
 .logo {
-  width: 10%;
+  width: 20%;
   height: auto;
 }
 
@@ -83,30 +83,31 @@ header ul {
 
 .table-container {
   max-height: 650px;
-  width: 975px;
   overflow-y: auto;
 }
 
 .client-table {
   font-family: Josefin Sans;
   border-collapse: collapse;
-  width: 950px;
+  width: 1050px;
   table-layout:auto;
 }
 
 td {
-  padding: 15px;
   text-align: center;
   vertical-align: middle;
+  padding: 15px;
 }
 
 tr:hover {
   background-color: #8fc094;
+  padding: 15px;
   cursor: pointer;
 }
 
 .tr-with-tooltip {
   position: relative;
+
 }
 
 .tr-with-tooltip:hover:after {
@@ -115,8 +116,8 @@ tr:hover {
   top: 100%;
   left: 0;
   background: #ffffff;
-  color: rgb(90, 90, 90);
   padding: 15px;
+  color: rgb(90, 90, 90);
   border-radius: 15px;
   z-index: 100;
   white-space: nowrap;
@@ -124,7 +125,6 @@ tr:hover {
 
 td, th {
   border: 1px solid #565656;
-  padding: 15px 15px 15px 15px;
 }
 
 .site-footer {

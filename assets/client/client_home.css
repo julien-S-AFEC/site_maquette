@@ -46,7 +46,7 @@ header ul {
 }
 
 .logo {
-  width: 20%;
+  width: 8%;
   height: auto;
 }
 
@@ -84,6 +84,7 @@ header ul {
 .table-container {
   max-height: 650px;
   overflow-y: auto;
+  scrollbar-width: thin;
 }
 
 .client-table {
@@ -107,7 +108,6 @@ tr:hover {
 
 .tr-with-tooltip {
   position: relative;
-
 }
 
 .tr-with-tooltip:hover:after {
@@ -123,8 +123,12 @@ tr:hover {
   white-space: nowrap;
 }
 
-td, th {
-  border: 1px solid #565656;
+td {
+  border-top: 1px solid #565656;
+}
+
+th {
+  padding-bottom: 10px;
 }
 
 .site-footer {
@@ -225,4 +229,13 @@ td, th {
 
 .search-bar:hover {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.settings-img {
+  width: 20px;
+  height: auto;
+}
+
+.settings-img:hover {
+  transform: scale(120%);
 }

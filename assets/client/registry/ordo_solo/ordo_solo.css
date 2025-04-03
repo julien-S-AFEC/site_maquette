@@ -1,0 +1,46 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(38, 38, 38);
+}
+
+.ordo-container {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ordo {
+  width: 100vh;
+  height: auto;
+}
+
+@media print {
+  @page {
+    margin: 0;
+  }
+  body {
+    visibility: hidden;
+  }
+  #ordo {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+  height: 30px;
+}
+
+.btn {
+  width: 100px;
+  border-radius: 10px;
+}

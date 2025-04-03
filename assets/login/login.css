@@ -140,19 +140,56 @@ form input:hover {
   border-radius: 9px;
 }
 
-.ok-btn:hover {
-  border: #4caf50 1.5px solid;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+.ok-btn {
+  background-color: #5fbb99;
+  transform: scale(1);
+  position: relative;
 }
 
-.cancel-btn:hover {
-  border: #cc4f4f 1.5px solid;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+.ok-btn:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  transition: transform .6s ease-in;
 }
 
-.btn-container button:hover:before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
+
+.ok-btn::before {
+  content: " ";
+  position: absolute;
+  height:100%;
+  width: 100%;
+  top:0;
+  left: 0;
+  background-color: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform .6s ease-out;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+.cancel-btn {
+  transform: scale(1);
+  position: relative;
+  border-radius: 9px;
+}
+
+.cancel-btn::before {
+  content: " ";
+  position: absolute;
+  height:100%;
+  width: 100%;
+  top:0;
+  left: 0;
+  background-color: hsl(0, 100%, 54%);
+  border-radius: 9px;
+  z-index: -1;
+  transition: transform .6s ease-in;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+.cancel-btn:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  transition: transform .6s ease-in;
 }
